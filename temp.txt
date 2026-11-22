@@ -1,0 +1,139 @@
+[INFO] [launch]: All log files can be found below /home/gregorio/.ros/log/2026-11-19-14-58-10-644857-gregorio-Cyborg-15-A13VE-71335
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign gazebo-1]: process started with pid [71338]
+[INFO] [rviz2-2]: process started with pid [71341]
+[INFO] [create-3]: process started with pid [71343]
+[INFO] [robot_state_publisher-4]: process started with pid [71345]
+[INFO] [parameter_bridge-5]: process started with pid [71347]
+[INFO] [image_bridge-6]: process started with pid [71349]
+[INFO] [ekf_node-7]: process started with pid [71351]
+[INFO] [aruco_detector-8]: process started with pid [71353]
+[INFO] [fsm_node-9]: process started with pid [71355]
+[INFO] [take_photo_service-10]: process started with pid [71359]
+[create-3] [INFO] [1795096691.259425731] [ros_gz_sim]: Requesting list of world names.
+[robot_state_publisher-4] [WARN] [1795096691.289242183] [kdl_parser]: The root link link_chassis has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-4] [INFO] [1795096691.289346653] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-4] [INFO] [1795096691.289442368] [robot_state_publisher]: got segment camera_link_optical
+[robot_state_publisher-4] [INFO] [1795096691.289451629] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-4] [INFO] [1795096691.289458654] [robot_state_publisher]: got segment left_wheel
+[robot_state_publisher-4] [INFO] [1795096691.289464891] [robot_state_publisher]: got segment link_chassis
+[robot_state_publisher-4] [INFO] [1795096691.289471358] [robot_state_publisher]: got segment right_wheel
+[robot_state_publisher-4] [INFO] [1795096691.289477712] [robot_state_publisher]: got segment scan_link
+[parameter_bridge-5] [INFO] [1795096691.364918649] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1795096691.366139484] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1795096691.367569484] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/odom (gz.msgs.Odometry) -> /odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1795096691.368914175] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/joint_states (gz.msgs.Model) -> /joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1795096691.370331515] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/camera_info (gz.msgs.CameraInfo) -> /camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1795096691.371292996] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/camera_joint/cmd_pos (std_msgs/msg/Float64) -> /camera_joint/cmd_pos (gz.msgs.Double)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1795096691.372016002] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/imu (gz.msgs.IMU) -> /imu (sensor_msgs/msg/Imu)] (Lazy 0)
+[create-3] [INFO] [1795096691.464051927] [ros_gz_sim]: Waiting messages on topic [robot_description].
+[create-3] [INFO] [1795096691.477196235] [ros_gz_sim]: Requested creation of entity.
+[create-3] [INFO] [1795096691.477242213] [ros_gz_sim]: OK creation of entity.
+[take_photo_service-10] [INFO] [1795096691.518248407] [take_photo_service]: Take-Photo service ready: listening on /camera/image (compressed), publishing on /marker_image, show_image=true
+[INFO] [create-3]: process has finished cleanly [pid 71343]
+[fsm_node-9] [INFO] [1795096691.670467437] [fsm_node]: Robot started. Entering MOVE state.
+[aruco_detector-8] 
+[aruco_detector-8] A module that was compiled using NumPy 1.x cannot be run in
+[aruco_detector-8] NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
+[aruco_detector-8] versions of NumPy, modules must be compiled with NumPy 2.0.
+[aruco_detector-8] Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+[aruco_detector-8] 
+[aruco_detector-8] If you are a user of the module, the easiest solution will be to
+[aruco_detector-8] downgrade to 'numpy<2' or try to upgrade the affected module.
+[aruco_detector-8] We expect that some modules will need time to support NumPy 2.
+[aruco_detector-8] 
+[aruco_detector-8] Traceback (most recent call last):  File "/home/gregorio/ros2_humble_ws/install/assignment/lib/assignment/aruco_detector", line 7, in <module>
+[aruco_detector-8]     from cv_bridge import CvBridge, CvBridgeError
+[aruco_detector-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/cv_bridge/__init__.py", line 6, in <module>
+[aruco_detector-8]     from cv_bridge.boost.cv_bridge_boost import cvtColorForDisplay, getCvType
+[ign gazebo-1] Error [Converter.cc:156] Unable to convert from SDF version 1.10 to 1.9
+[rviz2-2] [INFO] [1795096691.756823645] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-2] [INFO] [1795096691.756931679] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[fsm_node-9] [INFO] [1795096691.771105401] [fsm_node]: MOVE state, target_id: 1.
+[parameter_bridge-5] [INFO] [1795096691.771467107] [ros_gz_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+[rviz2-2] [INFO] [1795096691.789977959] [rviz2]: Stereo is NOT SUPPORTED
+[aruco_detector-8] AttributeError: _ARRAY_API not found
+[fsm_node-9] [INFO] [1795096691.870608531] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096691.970485707] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096692.070467744] [fsm_node]: MOVE state, target_id: 1.
+[aruco_detector-8] [INFO] [1795096692.072370124] [aruco_detector]: Listening on /camera/image/compressed, publishing on /marker_array
+[fsm_node-9] [INFO] [1795096692.170475952] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096692.271637512] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096692.370504575] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096692.471114517] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096692.571610663] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096692.670502451] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096692.770518674] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096692.870506842] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096692.970955547] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096693.070536519] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096693.170526006] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096693.271538293] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096693.370571640] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096693.470567389] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096693.570556924] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096693.670722865] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096693.770575801] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096693.870689797] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096693.970579790] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096694.071007155] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096694.172928094] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096694.270606778] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096694.370528260] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096694.470965954] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096694.570614925] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096694.670623089] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096694.770687940] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096694.870635787] [fsm_node]: MOVE state, target_id: 1.
+[aruco_detector-8] 
+[aruco_detector-8] A module that was compiled using NumPy 1.x cannot be run in
+[aruco_detector-8] NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
+[aruco_detector-8] versions of NumPy, modules must be compiled with NumPy 2.0.
+[aruco_detector-8] Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+[aruco_detector-8] 
+[aruco_detector-8] If you are a user of the module, the easiest solution will be to
+[aruco_detector-8] downgrade to 'numpy<2' or try to upgrade the affected module.
+[aruco_detector-8] We expect that some modules will need time to support NumPy 2.
+[aruco_detector-8] 
+[aruco_detector-8] Traceback (most recent call last):  File "/home/gregorio/ros2_humble_ws/install/assignment/lib/assignment/aruco_detector", line 112, in <module>
+[aruco_detector-8]     main()
+[aruco_detector-8]   File "/home/gregorio/ros2_humble_ws/install/assignment/lib/assignment/aruco_detector", line 102, in main
+[aruco_detector-8]     rclpy.spin(node)
+[aruco_detector-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[aruco_detector-8]     executor.spin_once()
+[aruco_detector-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[aruco_detector-8]     self._spin_once_impl(timeout_sec)
+[aruco_detector-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 807, in _spin_once_impl
+[aruco_detector-8]     handler()
+[aruco_detector-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 293, in __call__
+[aruco_detector-8]     self._execute_coroutine_step(self._handler)
+[aruco_detector-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 309, in _execute_coroutine_step
+[aruco_detector-8]     result = coro.send(None)
+[aruco_detector-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 488, in handler
+[aruco_detector-8]     await call_coroutine(entity, arg)
+[aruco_detector-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 407, in _execute_subscription
+[aruco_detector-8]     await await_or_execute(sub.callback, msg)
+[aruco_detector-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 110, in await_or_execute
+[aruco_detector-8]     return callback(*args)
+[aruco_detector-8]   File "/home/gregorio/ros2_humble_ws/install/assignment/lib/assignment/aruco_detector", line 66, in image_callback
+[aruco_detector-8]     cv_image = self.bridge.compressed_imgmsg_to_cv2(msg, desired_encoding='bgr8')
+[aruco_detector-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/cv_bridge/core.py", line 141, in compressed_imgmsg_to_cv2
+[aruco_detector-8]     res = cvtColor2(im, 'bgr8', desired_encoding)
+[aruco_detector-8] AttributeError: _ARRAY_API not found
+[fsm_node-9] [INFO] [1795096694.970652516] [fsm_node]: MOVE state, target_id: 1.
+[ERROR] [aruco_detector-8]: process has died [pid 71353, exit code -11, cmd '/home/gregorio/ros2_humble_ws/install/assignment/lib/assignment/aruco_detector --ros-args -r __node:=aruco_detector --params-file /home/gregorio/ros2_humble_ws/install/assignment/share/assignment/config/sim.yaml --params-file /tmp/launch_params_drbxdc7e'].
+[fsm_node-9] [INFO] [1795096695.070646819] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096695.170683660] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096695.273131837] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096695.370670538] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096695.471272519] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096695.572163925] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096695.670775581] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096695.770673421] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096695.871800214] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096695.970716706] [fsm_node]: MOVE state, target_id: 1.
+[ign gazebo-1] libEGL warning: egl: failed to create dri2 screen
+[ign gazebo-1] libEGL warning: egl: failed to create dri2 screen
+[fsm_node-9] [INFO] [1795096696.070711970] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096696.170710237] [fsm_node]: MOVE state, target_id: 1.
+[fsm_node-9] [INFO] [1795096696.271675806] [fsm_node]: MOVE state, target_id: 1.
